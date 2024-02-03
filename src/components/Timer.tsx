@@ -1,9 +1,16 @@
-import Container from './UI/Container.tsx';
+import Container from "./UI/Container.tsx";
+import { Timer as TimerProps } from "../store/timer-context.tsx";
 
-export default function Timer() {
+// type TimerProps ={
+//   name: string;
+//   duration: number;
+// }
+
+export default function Timer({ name, duration }: TimerProps) {
   return (
     <Container as="article">
-      <h2>TODO: TIMER NAME</h2>
+      <h2>{name}</h2>
+      <p>{duration}</p>
     </Container>
   );
 }
