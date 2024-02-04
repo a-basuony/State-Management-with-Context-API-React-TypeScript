@@ -16,7 +16,6 @@ export default function Timer({ name, duration }: TimerProps) {
 
   const { isRunning } = useTimersContext();
   // Reset the timer when it's added to the context for the first time
-  // let timer;
 
   if (remainingTime <= 0 && interval.current) {
     clearInterval(interval.current);
