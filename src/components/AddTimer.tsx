@@ -14,7 +14,7 @@ export default function AddTimer() {
     // duration as string here and it should be number So =>  parseInt(extractedData.duration, 10) or
     addTimer({
       name: extractedData.name,
-      duration: parseInt(extractedData.duration, 10),
+      duration: parseInt(extractedData.duration),
     });
     // console.log(extractedData);
     form.current?.clear();
