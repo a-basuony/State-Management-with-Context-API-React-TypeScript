@@ -12,7 +12,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
   return (
     <p>
       {label === "Duration" ? (
-        <label htmlFor={id}>{label} : Milliseconds</label>
+        <label htmlFor={id}>{label} : Seconds</label>
       ) : (
         <label htmlFor={id}>{label}</label>
       )}
